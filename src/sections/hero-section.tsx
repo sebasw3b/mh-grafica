@@ -30,7 +30,7 @@ export const HeroSection = ({
 }: HeroSectionProps) => {
 
   return (
-    <section className="flex flex-col items-center xl:flex-row max-w-9/12 xl:max-w-10/12 mx-auto pt-26 pb-10 xl:py-20 gap-12 xl:gap-8">
+    <section className="flex flex-col items-start xl:flex-row max-w-9/12 xl:max-w-10/12 mx-auto pt-26 pb-10 xl:py-20 gap-12 xl:gap-8">
       <SectionHeader
         as="header"
         className="space-y-6 basis-1/2 order-1 xl:order-1"
