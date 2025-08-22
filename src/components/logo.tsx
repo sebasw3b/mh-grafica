@@ -1,7 +1,13 @@
+import logo from '../../public/logo.png'
 
 export const Logo = () => {
   return <div className="flex items-center gap-1.5">
-    <div className="rounded-full w-8 p-1.5 bg-accent fill-white" data-framer-name="Icon Wrapper" ><div className="framer-i97scy-container" ><div ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" focusable="false" color="var(--token-dc176b44-76f2-4d82-b520-17c069e6ae09, rgb(217, 46, 46))"><g color="var(--token-dc176b44-76f2-4d82-b520-17c069e6ae09, rgb(217, 46, 46))" ><path d="M240,108a28,28,0,1,1-28-28A28,28,0,0,1,240,108ZM72,108a28,28,0,1,0-28,28A28,28,0,0,0,72,108ZM92,88A28,28,0,1,0,64,60,28,28,0,0,0,92,88Zm72,0a28,28,0,1,0-28-28A28,28,0,0,0,164,88Zm23.12,60.86a35.3,35.3,0,0,1-16.87-21.14,44,44,0,0,0-84.5,0A35.25,35.25,0,0,1,69,148.82,40,40,0,0,0,88,224a39.48,39.48,0,0,0,15.52-3.13,64.09,64.09,0,0,1,48.87,0,40,40,0,0,0,34.73-72Z"></path></g></svg></div></div></div>
-    <span className="xl:text-xl font-medium">Groomify</span>
+    <img
+      src={logo}
+      alt="Descripción principal del producto"
+      width="1200"
+      height="600"
+      className="object-cover rounded-3xl w-10 h-10"
+    />
   </div>
 }

@@ -20,7 +20,7 @@ const Header = () => {
 
   return (
     <motion.div
-      className="fixed xl:sticky inset-0 z-50 bg-white/70 backdrop-blur-xl backdrop-brightness-100 overflow-hidden"
+      className="fixed xl:sticky inset-0 z-50 bg-white"
       animate={{
         height: isMenuOpen ? "100vh" : "4.2rem"
       }}
@@ -90,12 +90,12 @@ const ResponsiveNavigation = ({
           <motion.span
             animate={{ rotate: isOpen ? 45 : 0, y: isOpen ? 0 : -4 }}
             transition={{ duration: 0.3 }}
-            className="absolute left-0 w-8 h-0.5 rounded-[10px] bg-foreground top-1/2 -translate-y-1/2 origin-center"
+            className="absolute left-0 w-6 h-0.5 rounded-[10px] bg-foreground top-1/2 -translate-y-1/2 origin-center"
           />
           <motion.span
             animate={{ rotate: isOpen ? -45 : 0, y: isOpen ? 0 : 4 }}
             transition={{ duration: 0.3 }}
-            className="absolute left-0 w-8 h-0.5 rounded-[10px] bg-foreground top-1/2 -translate-y-1/2 origin-center"
+            className="absolute left-0 w-6 h-0.5 rounded-[10px] bg-foreground top-1/2 -translate-y-1/2 origin-center"
           />
         </div>
       </button>
