@@ -1,0 +1,47 @@
+{
+    "packages": [
+      {
+        "id": 1,
+        "price": 80,
+        "title": "The Essential Elegance",
+        "slug": "the-essential-elegance",
+        "items": [
+          "Gentle bath pet-safe shampoo",
+          "Nail trimming & filing",
+          "Ear cleaning",
+          "Paw pad moisturizing",
+          "Fluff dry & brush-out",
+          "Complimentary bowtie or floral collar"
+        ]
+      },
+      {
+        "id": 2,
+        "price": 120,
+        "title": "The Signature spa day",
+        "slug": "the-signature-spa-day",
+        "items": [
+          "Deep-conditioning bath",
+          "Full-body haircut & breed-specific styling",
+          "Nail trimming, filing and buffing",
+          "Ear cleaning & teeh brushing",
+          "Smoothing paw balm application",
+          "Scented spritz for a frash fragance"
+        ]
+      },
+      {
+        "id": 3,
+        "price": 150,
+        "title": "The Royal Retreat",
+        "slug": "the-royal-retreat",
+        "items": [
+          "Everything in the Signature Spa Day",
+          "Blueberry facial to brighten and cleanse",
+          "Luxury pawdicure with nail polish",
+          "Hydrating fur mask for silky softness",
+          "Hand-blown dry for a fluffy finish",
+          "Custom accessory (designer bandana, bowtie, or charm)"
+        ]
+      }
+    ]
+  }
+  
