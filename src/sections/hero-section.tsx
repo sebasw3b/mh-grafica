@@ -47,7 +47,7 @@ export const HeroSection = ({
         >
           <SectionTitle
             as="h1"
-            className="text-[55px] xl:text-[88px] font-semibold leading-none tracking-tighter"
+            className="font-semibold leading-none tracking-tighter"
           >
             {title}
             {highlight && (
@@ -65,7 +65,7 @@ export const HeroSection = ({
           asChild={!!button.href}
           aria-label={button.ariaLabel || `${button.text.toLowerCase().replace(/\s+/g, '-')}`}
           size="lg"
-          className="xl:inline-block text-base w-fit "
+          className="xl:inline-block text-base w-fit rounded-full font-normal"
         >
           {button.href ? (
             <a href={button.href}>{button.text}</a>

@@ -15,7 +15,7 @@ function Homepage() {
       title={`Tenemos los banners para tu empresa.`}
       description={`Diseñamos e imprimimos banners de alta calidad, adaptados a tu negocio.`}
       button={{
-        text: 'Book Appointment'
+        text: 'Solicitar presupuesto'
       }}
       image={{
         src: heroImage,
