@@ -2,7 +2,7 @@
 import Header from "@/components/header"
 
 // Assets
-import heroImage from "@/assets/images/hero/7vnvysI8IQH0DHnujpZ3zK3iI.avif";
+import heroImage from "@/assets/images/hero/geri-sakti-R_J3nOqe9Kw-unsplash.jpg";
 
 // Sections
 import { HeroSection } from "@/sections/hero-section";

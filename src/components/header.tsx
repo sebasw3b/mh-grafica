@@ -9,10 +9,10 @@ interface NavItem {
 }
 
 const NAV_ITEMS: NavItem[] = [
-  { label: "About", href: "#about" },
-  { label: "Services", href: "#services" },
-  { label: "Gallery", href: "#gallery" },
-  { label: "FAQs", href: "#faq" }
+  { label: "Servicios", href: "#" },
+  { label: "Quienes somos", href: "#" },
+  { label: "Preguntas frecuentes", href: "#" },
+  { label: "Contactar", href: "#" }
 ]
 
 const Header = () => {
@@ -146,8 +146,8 @@ const MobileMenu = ({
               transition={{ delay: 0.1 + items.length * 0.1 }}
               className="w-full max-w-xs mt-4"
             >
-              <Button className="w-full text-base" size="lg" onClick={onClose}>
-                Book Appointment
+              <Button className="w-full text-base rounded-full font-normal" size="lg" onClick={onClose}>
+                Solicita presupuesto
               </Button>
             </motion.div>
           </div>
