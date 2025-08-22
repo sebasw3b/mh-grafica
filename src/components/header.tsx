@@ -9,10 +9,10 @@ interface NavItem {
 }
 
 const NAV_ITEMS: NavItem[] = [
-  { label: "About", href: "#about" },
-  { label: "Services", href: "#services" },
-  { label: "Gallery", href: "#gallery" },
-  { label: "FAQs", href: "#faq" }
+  { label: "Servicios", href: "#" },
+  { label: "Quienes somos", href: "#" },
+  { label: "Preguntas frecuentes", href: "#" },
+  { label: "Contactar", href: "#" }
 ]
 
 const Header = () => {
@@ -20,7 +20,7 @@ const Header = () => {
 
   return (
     <motion.div
-      className="fixed xl:sticky inset-0 z-50 bg-white/70 backdrop-blur-xl backdrop-brightness-100 overflow-hidden"
+      className="fixed xl:sticky inset-0 z-50 bg-white"
       animate={{
         height: isMenuOpen ? "100vh" : "4.2rem"
       }}
@@ -90,12 +90,12 @@ const ResponsiveNavigation = ({
           <motion.span
             animate={{ rotate: isOpen ? 45 : 0, y: isOpen ? 0 : -4 }}
             transition={{ duration: 0.3 }}
-            className="absolute left-0 w-8 h-0.5 rounded-[10px] bg-foreground top-1/2 -translate-y-1/2 origin-center"
+            className="absolute left-0 w-6 h-0.5 rounded-[10px] bg-foreground top-1/2 -translate-y-1/2 origin-center"
           />
           <motion.span
             animate={{ rotate: isOpen ? -45 : 0, y: isOpen ? 0 : 4 }}
             transition={{ duration: 0.3 }}
-            className="absolute left-0 w-8 h-0.5 rounded-[10px] bg-foreground top-1/2 -translate-y-1/2 origin-center"
+            className="absolute left-0 w-6 h-0.5 rounded-[10px] bg-foreground top-1/2 -translate-y-1/2 origin-center"
           />
         </div>
       </button>
@@ -146,8 +146,8 @@ const MobileMenu = ({
               transition={{ delay: 0.1 + items.length * 0.1 }}
               className="w-full max-w-xs mt-4"
             >
-              <Button className="w-full text-base" size="lg" onClick={onClose}>
-                Book Appointment
+              <Button className="w-full text-base rounded-full font-normal" size="lg" onClick={onClose}>
+                Solicita presupuesto
               </Button>
             </motion.div>
           </div>
