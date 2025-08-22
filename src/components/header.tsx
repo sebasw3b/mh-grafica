@@ -53,9 +53,9 @@ const Header = () => {
           <Button
             aria-label="book-appointment"
             size="lg"
-            className="hidden xl:inline-block text-base"
+            className="hidden xl:inline-block text-base rounded-full"
           >
-            Book Appointment
+            Solicita presupuesto
           </Button>
         </div>
       </header>
