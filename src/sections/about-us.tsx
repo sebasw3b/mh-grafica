@@ -1,5 +1,5 @@
 import { HomeIcon } from "@/assets/icons/HomeIcon";
-import { SectionBadge, SectionDescription, SectionHeader, SectionTitle } from "@/components/groomify/section-header";
+import { SectionBadge, SectionDescription, SectionHeader, SectionTitle } from "@/components/section-header";
 
 import { motion } from 'motion/react'
 
@@ -16,18 +16,18 @@ export const AboutUs = ({ title, highlight, desc }: Props) => {
 
         <SectionHeader className="xl:basis-md space-y-5">
           <SectionBadge className="fill-accent" variant="secondary">
-            <HomeIcon/>
+            <HomeIcon />
             About us
           </SectionBadge>
           <motion.div
-            initial={{ opacity: 0, translateY:'-30px'}}
-            whileInView={{ opacity: 1, translateY:'0px' }}
+            initial={{ opacity: 0, translateY: '-30px' }}
+            whileInView={{ opacity: 1, translateY: '0px' }}
             transition={{
-              duration:0.5,
-              ease:'easeInOut',
-              delay:0.1,
+              duration: 0.5,
+              ease: 'easeInOut',
+              delay: 0.1,
             }}
-            viewport={{once:true}}
+            viewport={{ once: true }}
           >
             <SectionTitle className="">
               <span className="text-accent">{highlight}</span>{title}
@@ -37,7 +37,7 @@ export const AboutUs = ({ title, highlight, desc }: Props) => {
           <SectionDescription>{desc}</SectionDescription>
         </SectionHeader>
 
-       
+
         <Experience />
       </div>
     </section>

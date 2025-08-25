@@ -1,7 +1,7 @@
 // Components
-import { SectionBadge, SectionHeader, SectionTitle } from "@/components/groomify/section-header";
+import { SectionBadge, SectionHeader, SectionTitle } from "@/components/section-header";
 // Motion
-import {motion} from 'motion/react'
+import { motion } from 'motion/react'
 
 interface TestimonialsProps {
   testimonials: Testimonial[];
@@ -49,7 +49,7 @@ export const Testimonials = ({ testimonials }: TestimonialsProps) => {
               ease: 'easeInOut',
               delay: 0.1,
             }}
-            viewport={{once:true}}
+            viewport={{ once: true }}
           >
             <SectionTitle>
               Some of our

@@ -1,4 +1,4 @@
-import { Badge } from "../ui/badge";
+import { Badge } from "../shadcn/badge";
 
 interface Props {
   Icon: React.FC<React.SVGProps<SVGSVGElement>>;

@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { Logo } from "./logo"
-import { Button } from "./ui/button"
+import { Button } from "../shadcn/button"
 
 interface NavItem {
   label: string

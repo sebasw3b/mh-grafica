@@ -1,10 +1,10 @@
 
 import image from '@/assets/images/faq/KCU7hVjgCEDWDdSh4UtiZ1DTNN4.jpeg'
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/shadcn/accordion";
 import { CallIcon } from "@/assets/icons/CallIcon";
 
 // Components
-import { SectionBadge, SectionHeader, SectionTitle } from "@/components/groomify/section-header";
+import { SectionBadge, SectionHeader, SectionTitle } from "@/components/section-header";
 
 // Motion
 import { motion } from 'motion/react'
@@ -47,7 +47,7 @@ export const FAQ = () => {
                 ease: 'easeInOut',
                 delay: 0.1,
               }}
-              viewport={{once:true}}
+              viewport={{ once: true }}
             >
               <SectionTitle className="text-[42px] leading-tight">
                 Frequently asked

@@ -1,7 +1,7 @@
 import video from "@/assets/videos/output.webm";
 
-import { SectionDescription, SectionHeader, SectionTitle } from "@/components/groomify/section-header";
-import { Button } from "@/components/ui/button";
+import { SectionDescription, SectionHeader, SectionTitle } from "@/components/section-header";
+import { Button } from "@/shadcn/button";
 
 import { motion } from 'motion/react'
 

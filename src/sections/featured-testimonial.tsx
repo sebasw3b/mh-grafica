@@ -1,7 +1,7 @@
 import image from "/images/testimonials/CFYh61KBbiYEioTUQAW2k9iEdUE.avif";
-import { Badge } from "@/components/ui/badge";
+import { Badge } from "@/shadcn/badge";
 
-import {motion} from 'motion/react'
+import { motion } from 'motion/react'
 
 import { Star } from "lucide-react";
 
@@ -39,24 +39,24 @@ export const FeaturedTestimonial = () => {
           </Badge>
 
           <figure className="space-y-5">
-          <motion.div
-            initial={{ opacity: 0, translateY:'-30px'}}
-            whileInView={{ opacity: 1, translateY:'0px' }}
-            transition={{
-              duration:0.7,
-              ease:'easeInOut',
-              delay:0.1,
-            }}
-            viewport={{once:true}}
-          >
-            <blockquote className="text-xl xl:text-2xl xl:leading-10">
-              "Jackie used to hate grooming, but ever since we found your salon,
-              she can’t wait for her spa days! The team is so patient and loving
-              - they’ve completely changed her experience. Now she struts out
-              like a little diva every time!"
-            </blockquote>
-          </motion.div>
-            
+            <motion.div
+              initial={{ opacity: 0, translateY: '-30px' }}
+              whileInView={{ opacity: 1, translateY: '0px' }}
+              transition={{
+                duration: 0.7,
+                ease: 'easeInOut',
+                delay: 0.1,
+              }}
+              viewport={{ once: true }}
+            >
+              <blockquote className="text-xl xl:text-2xl xl:leading-10">
+                "Jackie used to hate grooming, but ever since we found your salon,
+                she can’t wait for her spa days! The team is so patient and loving
+                - they’ve completely changed her experience. Now she struts out
+                like a little diva every time!"
+              </blockquote>
+            </motion.div>
+
 
             <div className="flex gap-0.5 xl:gap-2">
               <Star className="w-4 h-4 xl:w-5 xl:h-5 fill-accent stroke-accent" />
@@ -72,7 +72,7 @@ export const FeaturedTestimonial = () => {
                 Jackie’s Owner
               </span>
             </figcaption>
-            
+
           </figure>
         </div>
       </div>

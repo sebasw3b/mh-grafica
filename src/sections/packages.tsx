@@ -1,7 +1,7 @@
-import { PackageCard } from "@/components/groomify/package-card";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { PackageCard } from "@/components/package-card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/shadcn/tabs";
 
-import { SectionBadge, SectionDescription, SectionHeader, SectionTitle } from "@/components/groomify/section-header";
+import { SectionBadge, SectionDescription, SectionHeader, SectionTitle } from "@/components/section-header";
 
 import { packages } from "@/data/packages.json";
 
@@ -49,7 +49,7 @@ export const Packages = ({ title, desc, highlight }: Props) => {
             ease: 'easeInOut',
             delay: 0.1,
           }}
-          viewport={{once:true}}
+          viewport={{ once: true }}
         >
           <SectionTitle>
             {title}<span className="text-accent"> {highlight}</span>
