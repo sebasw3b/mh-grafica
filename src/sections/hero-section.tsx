@@ -81,7 +81,6 @@ export const HeroSection = ({
       <video
         controls
         muted
-        autoPlay
         loop
         playsInline
         width="100%"
