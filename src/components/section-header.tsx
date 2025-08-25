@@ -1,7 +1,7 @@
 import * as React from "react"
 
 // Components
-import { Badge } from "@/components/ui/badge"
+import { Badge } from "@/shadcn/badge"
 
 // Utils
 import { cn } from "@/lib/utils"
@@ -12,8 +12,8 @@ function SectionHeader({
   className,
   as: Component = "header",
   ...props
-}: React.ComponentProps<"header"> & { 
-  as?: "header" | "section" | "div" 
+}: React.ComponentProps<"header"> & {
+  as?: "header" | "section" | "div"
 }) {
   const Comp = Component as any
   return (
@@ -30,8 +30,8 @@ function SectionTitle({
   className,
   as: Component = "h2",
   ...props
-}: React.ComponentProps<"h1"> & { 
-  as?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6" 
+}: React.ComponentProps<"h1"> & {
+  as?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6"
 }) {
   const Comp = Component as any
   return (
@@ -49,8 +49,8 @@ function SectionDescription({
   className,
   as: Component = "p",
   ...props
-}: React.ComponentProps<"p"> & { 
-  as?: "p" | "div" | "span" 
+}: React.ComponentProps<"p"> & {
+  as?: "p" | "div" | "span"
 }) {
   const Comp = Component as any
   return (
@@ -64,9 +64,9 @@ function SectionDescription({
   )
 }
 
-export { 
-  SectionHeader, 
-  SectionBadge,  
-  SectionTitle,  
-  SectionDescription 
+export {
+  SectionHeader,
+  SectionBadge,
+  SectionTitle,
+  SectionDescription
 }

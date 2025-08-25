@@ -1,11 +1,11 @@
-import { ServiceItem } from "@/components/groomify/service-item";
+import { ServiceItem } from "@/components/service-item";
 
 // Assets
 import { BlueberryFacialIcon, PawdicurePlusIcon, TeethBrushingIcon, EarCleaningIcon, FurConditioningIcon, DeSheddingIcon } from "@/assets/icons/";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/shadcn/button";
 
 import { motion } from 'motion/react'
-import { SectionBadge, SectionDescription, SectionHeader, SectionTitle } from "@/components/groomify/section-header";
+import { SectionBadge, SectionDescription, SectionHeader, SectionTitle } from "@/components/section-header";
 
 export const Services = () => {
   return (

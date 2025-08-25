@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { Logo } from "./logo"
-import { Button } from "./ui/button"
+import { Button } from "../shadcn/button"
 
 interface NavItem {
   label: string
@@ -83,7 +83,7 @@ const ResponsiveNavigation = ({
         aria-controls="main-menu"
         aria-expanded={isOpen}
         onClick={() => onToggle(!isOpen)}
-        className="block md:hidden relative z-60"
+        className="block md:hidden relative z-50"
         type="button"
       >
         <div className="relative w-8 h-8">

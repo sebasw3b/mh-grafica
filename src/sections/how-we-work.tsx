@@ -1,5 +1,5 @@
 import video from "@/assets/videos/OVloYNWNOr1UtcCLV2z2p1DOYw.mp4";
-import { SectionBadge, SectionDescription, SectionHeader, SectionTitle } from "@/components/groomify/section-header";
+import { SectionBadge, SectionDescription, SectionHeader, SectionTitle } from "@/components/section-header";
 
 import { motion } from 'motion/react'
 
@@ -43,7 +43,7 @@ export const HowWeWork = ({ title, highlight, desc }: Props) => {
               ease: 'easeInOut',
               delay: 0.1,
             }}
-            viewport={{once:true}}
+            viewport={{ once: true }}
           >
             <SectionTitle className="text-4xl xl:text-6xl text-center tracking-tighter mb-2 leading-tight">
               {title}<span className="text-accent"> {highlight}</span>

@@ -1,10 +1,10 @@
 // Components
-import { Button } from "@/components/ui/button";
-import { Card, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { SectionBadge, SectionDescription, SectionHeader, SectionTitle } from "@/components/groomify/section-header";
+import { Button } from "@/shadcn/button";
+import { Card, CardDescription, CardFooter, CardHeader, CardTitle } from "@/shadcn/card";
+import { SectionBadge, SectionDescription, SectionHeader, SectionTitle } from "@/components/section-header";
 
 // Motion
-import {motion} from 'motion/react'
+import { motion } from 'motion/react'
 
 // Icons
 import { PhoneIcon } from "@/assets/icons/PhoneIcon";
@@ -30,19 +30,19 @@ export const ContactUs = () => {
               Contact us
             </SectionBadge>
             <motion.div
-            initial={{ opacity: 0, translateY:'-30px'}}
-            whileInView={{ opacity: 1, translateY:'0px' }}
-            transition={{
-              duration:0.5,
-              ease:'easeInOut',
-              delay:0.1,
-            }}
-            viewport={{once:true}}
-          >
+              initial={{ opacity: 0, translateY: '-30px' }}
+              whileInView={{ opacity: 1, translateY: '0px' }}
+              transition={{
+                duration: 0.5,
+                ease: 'easeInOut',
+                delay: 0.1,
+              }}
+              viewport={{ once: true }}
+            >
 
-<SectionTitle>
-              How to <span className="text-accent">get <br></br>in touch</span> with us
-            </SectionTitle>
+              <SectionTitle>
+                How to <span className="text-accent">get <br></br>in touch</span> with us
+              </SectionTitle>
             </motion.div>
             <SectionDescription>Have a question? We're always here to help.</SectionDescription>
           </SectionHeader>
@@ -58,16 +58,16 @@ export const ContactUs = () => {
           <Card className="">
             <CardHeader>
               <div className="border w-fit border-[#595e6626] rounded-full p-2 mb-2">
-                <BookIcon className="fill-accent h-7 w-7"/>
+                <BookIcon className="fill-accent h-7 w-7" />
               </div>
               <CardTitle className="text-xl">Book online</CardTitle>
               <CardDescription className="text-base">Choose your date and book online now.</CardDescription>
             </CardHeader>
-            
-           
+
+
             <CardFooter>
               <Button size="sm" className="group text-xs">
-                <ArrowActionIcon className="group-hover:rotate-35 transition ease-in-out duration-400 fill-white size-3"/>
+                <ArrowActionIcon className="group-hover:rotate-35 transition ease-in-out duration-400 fill-white size-3" />
                 Book now</Button>
             </CardFooter>
           </Card>
@@ -75,16 +75,16 @@ export const ContactUs = () => {
           <Card className="space-y-6">
             <CardHeader>
               <div className="border w-fit border-[#595e6626] rounded-full p-2 mb-2">
-                <PhoneIcon className="fill-accent h-7 w-7"/>
+                <PhoneIcon className="fill-accent h-7 w-7" />
               </div>
               <CardTitle className="text-xl">Call us</CardTitle>
               <CardDescription className="text-base">Speak to us over the phone.</CardDescription>
             </CardHeader>
-            
-           
+
+
             <CardFooter>
               <Button size="sm" className="group text-xs">
-                <ArrowActionIcon className="group-hover:rotate-35 transition ease-in-out duration-400 fill-white size-3"/>
+                <ArrowActionIcon className="group-hover:rotate-35 transition ease-in-out duration-400 fill-white size-3" />
                 Call Us</Button>
             </CardFooter>
           </Card>
@@ -92,16 +92,16 @@ export const ContactUs = () => {
           <Card className="space-y-6">
             <CardHeader>
               <div className="border w-fit border-[#595e6626] rounded-full p-2 mb-2">
-                <DoorIcon className="fill-accent h-7 w-7"/>
+                <DoorIcon className="fill-accent h-7 w-7" />
               </div>
               <CardTitle className="text-xl">Visit us</CardTitle>
               <CardDescription className="text-base">Monday to Friday 8am - 5pm</CardDescription>
             </CardHeader>
-            
-           
+
+
             <CardFooter>
               <Button size="sm" className="group text-xs">
-                <ArrowActionIcon className="group-hover:rotate-35 transition ease-in-out duration-400 fill-white size-3"/>
+                <ArrowActionIcon className="group-hover:rotate-35 transition ease-in-out duration-400 fill-white size-3" />
                 Get directions</Button>
             </CardFooter>
           </Card>

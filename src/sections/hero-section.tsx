@@ -1,7 +1,7 @@
-import video from "@/assets/videos/output.webm";
+import video from "@/assets/examples/output.webm";
 
-import { SectionDescription, SectionHeader, SectionTitle } from "@/components/groomify/section-header";
-import { Button } from "@/components/ui/button";
+import { SectionDescription, SectionHeader, SectionTitle } from "@/components/section-header";
+import { Button } from "@/shadcn/button";
 
 import { motion } from 'motion/react'
 
@@ -75,6 +75,7 @@ export const HeroSection = ({
             <span onClick={button.onClick}>{button.text}</span>
           )}
         </Button>
+        <span>✌️ Garantía de colores reales</span>
       </SectionHeader>
 
       <video
