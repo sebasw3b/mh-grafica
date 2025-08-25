@@ -75,6 +75,7 @@ export const HeroSection = ({
             <span onClick={button.onClick}>{button.text}</span>
           )}
         </Button>
+        <span>✌️ Garantía de colores reales</span>
       </SectionHeader>
 
       <video
