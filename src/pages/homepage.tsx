@@ -6,6 +6,7 @@ import heroImage from "@/assets/images/hero/geri-sakti-R_J3nOqe9Kw-unsplash.jpg"
 
 // Sections
 import { HeroSection } from "@/sections/hero-section";
+import { FAQ } from "@/sections/FAQ";
 
 
 function Homepage() {
@@ -22,7 +23,7 @@ function Homepage() {
         alt: 'Hero Image'
       }}
     />
-
+    <FAQ />
   </main>
 }
 
