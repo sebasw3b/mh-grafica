@@ -32,7 +32,7 @@ export const HeroSection = ({
 }: HeroSectionProps) => {
 
   return (
-    <section className="flex flex-col items-start xl:flex-row max-w-9/12 xl:max-w-10/12 mx-auto pt-26 pb-10 xl:py-20 gap-12 xl:gap-16">
+    <section className="flex flex-col items-start xl:flex-row max-w-10/12 xl:max-w-10/12 mx-auto pt-26 pb-10 xl:py-20 gap-12 xl:gap-16">
       <SectionHeader
         as="header"
         className="space-y-6 basis-[65%] order-1 xl:order-1"
@@ -80,8 +80,6 @@ export const HeroSection = ({
 
       <video
         controls
-        muted
-        autoPlay
         loop
         playsInline
         width="100%"
