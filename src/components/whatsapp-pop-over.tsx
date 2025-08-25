@@ -35,7 +35,7 @@ export const WhatsAppPopOver = () => {
             </PopoverTrigger>
         </motion.div>
 
-        <PopoverContent>Place content for the popover here.</PopoverContent>
+        <PopoverContent sideOffset={10} className='-translate-x-3'>Ventana de whatsapp.</PopoverContent>
     </Popover>
 }
 
