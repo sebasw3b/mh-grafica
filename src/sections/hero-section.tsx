@@ -1,4 +1,4 @@
-import video from "@/assets/videos/output.webm";
+import video from "@/assets/examples/output.webm";
 
 import { SectionDescription, SectionHeader, SectionTitle } from "@/components/section-header";
 import { Button } from "@/shadcn/button";
