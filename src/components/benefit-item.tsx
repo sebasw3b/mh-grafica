@@ -1,10 +1,10 @@
-interface Props {
+export interface BenefitItem {
   Icon: React.FC<React.SVGProps<SVGSVGElement>>;
   title: string;
   description: string;
 }
 
-export const BenefitItem = ({ Icon, title, description }: Props) => {
+export const BenefitItem = ({ Icon, title, description }: BenefitItem) => {
   return (
     <div className="flex flex-col items-start text-left gap-1">
       <div className="flex items-center gap-2.5">
