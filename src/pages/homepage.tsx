@@ -10,6 +10,7 @@ import heroImage from "@/assets/images/hero/geri-sakti-R_J3nOqe9Kw-unsplash.jpg"
 import { HeroSection } from "@/sections/hero-section";
 import { FAQ } from "@/sections/FAQ";
 import { Works } from "@/sections/works";
+import { Services } from "@/sections/services";
 
 
 function Homepage() {
@@ -32,8 +33,11 @@ function Homepage() {
 
     <Works />
 
+    <Services />
+
     <FAQ />
 
+    {/* Blur effect */}
     <div className="fixed inset-x-0 bottom-0 h-40 backdrop-blur-3xl z-30"
       style={{
         maskImage: 'linear-gradient(to top, black, transparent)',
