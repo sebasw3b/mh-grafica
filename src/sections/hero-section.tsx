@@ -32,7 +32,7 @@ export const HeroSection = ({
 }: HeroSectionProps) => {
 
   return (
-    <section className="flex flex-col items-start xl:flex-row max-w-10/12 xl:max-w-10/12 mx-auto pt-26 pb-10 xl:py-20 gap-12 xl:gap-16">
+    <section className="flex flex-col items-start xl:flex-row max-w-11/12 xl:max-w-10/12 mx-auto pt-26 pb-10 xl:py-20 gap-12 xl:gap-16">
       <SectionHeader
         as="header"
         className="space-y-6 basis-[65%] order-1 xl:order-1"
@@ -49,7 +49,7 @@ export const HeroSection = ({
         >
           <SectionTitle
             as="h1"
-            className="font-semibold leading-none tracking-tighter"
+            className="font-bold leading-none tracking-normal"
           >
             {title}
             {highlight && (
@@ -67,7 +67,7 @@ export const HeroSection = ({
           asChild={!!button.href}
           aria-label={button.ariaLabel || `${button.text.toLowerCase().replace(/\s+/g, '-')}`}
           size="lg"
-          className="xl:inline-block text-base w-fit rounded-full font-normal"
+          className="xl:inline-block text-base w-fit rounded-full font-semibold"
         >
           {button.href ? (
             <a href={button.href}>{button.text}</a>
