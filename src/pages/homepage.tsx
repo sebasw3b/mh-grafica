@@ -33,6 +33,13 @@ function Homepage() {
     <Works />
 
     <FAQ />
+
+    <div className="fixed inset-x-0 bottom-0 h-40 backdrop-blur-lg z-30"
+      style={{
+        maskImage: 'linear-gradient(to top, black, transparent)',
+        WebkitMaskImage: 'linear-gradient(to top, black, transparent)'
+      }}>
+    </div>
   </main>
 }
 
