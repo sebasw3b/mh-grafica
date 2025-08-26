@@ -1,6 +1,5 @@
 import video from "@/assets/examples/output.webm";
 
-import { SectionDescription, SectionHeader, SectionTitle } from "@/components/section-header";
 import { Button } from "@/shadcn/button";
 import { ArrowRight } from "lucide-react";
 
@@ -26,14 +25,12 @@ interface HeroSectionProps {
 
 export const HeroSection = ({
   title,
-  highlight,
   description,
 }: HeroSectionProps) => {
 
   return (
     <section className="flex flex-col items-start xl:flex-row max-w-11/12 xl:max-w-10/12 mx-auto pt-26 pb-10 xl:py-20 gap-12 xl:gap-16 ">
-      <SectionHeader
-        as="header"
+      <div
         className="space-y-6 basis-[65%] order-1 xl:order-1"
       >
         <motion.div
@@ -46,26 +43,22 @@ export const HeroSection = ({
           }}
           viewport={{ once: true }}
         >
-          <SectionTitle
-            as="h1"
-            className="font-bold leading-none tracking-normal"
+          <h2
+            className="text-5xl xl:text-7xl font-bold leading-none tracking-normal"
           >
             {title}
-            {highlight && (
-              <span className="text-accent">{highlight}</span>
-            )}
-          </SectionTitle>
+          </h2>
         </motion.div>
 
 
-        <SectionDescription className="text-xl">
+        <p className="text-xl xl:text-2xl text-secondary-foreground">
           {description}
-        </SectionDescription>
+        </p>
 
         <Button className="text-base w-fit group" size="lg">Solicitar presupuesto
           <ArrowRight className="group-hover:translate-x-1 transition-transform duration-500" />
         </Button>
-      </SectionHeader>
+      </div>
 
       <video
         controls

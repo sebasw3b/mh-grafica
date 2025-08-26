@@ -3,16 +3,13 @@ import image from '@/assets/images/hero/geri-sakti-R_J3nOqe9Kw-unsplash.jpg'
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/shadcn/accordion";
 import { CallIcon } from "@/assets/icons/CallIcon";
 
-// Components
-import { SectionHeader, SectionTitle } from "@/components/section-header";
-
 // Motion
 import { motion } from 'motion/react'
 
 export const FAQ = () => {
   return (
     <section className="bg-background">
-      <div className="flex flex-col-reverse xl:flex-row gap-10 xl:gap-20 max-w-10/12 xl:max-w-6xl m-auto py-10 xl:py-20">
+      <div className="flex flex-col-reverse xl:flex-row gap-10 xl:gap-20 max-w-11/12 xl:max-w-6xl m-auto py-10 xl:py-20">
         <div className="relative">
           <img
             src={image}
@@ -32,7 +29,7 @@ export const FAQ = () => {
 
 
         <div>
-          <SectionHeader className="xl:basis-md space-y-5 mb-10">
+          <div className="xl:basis-md space-y-5 mb-10">
             <motion.div
               initial={{ opacity: 0, translateY: '-30px' }}
               whileInView={{ opacity: 1, translateY: '0px' }}
@@ -43,11 +40,11 @@ export const FAQ = () => {
               }}
               viewport={{ once: true }}
             >
-              <SectionTitle className="text-4xl font-bold leading-tight">
+              <h2 className="text-4xl font-bold leading-tight text-center">
                 Preguntas frecuentes
-              </SectionTitle>
+              </h2>
             </motion.div>
-          </SectionHeader>
+          </div>
 
           <Accordion className="space-y-4" type="single" collapsible>
             <AccordionItem value="item-1">
