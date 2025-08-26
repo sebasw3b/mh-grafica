@@ -1,21 +1,24 @@
+import { motion } from 'motion/react'
+
+// Shadcn components
+import { Button } from "@/shadcn/button";
+import { Badge } from "@/shadcn/badge";
+
+// Icons
+import { BlueberryFacialIcon, PawdicurePlusIcon, TeethBrushingIcon, EarCleaningIcon, FurConditioningIcon, DeSheddingIcon } from "@/assets/icons/";
+
+// Theme Components
 import { ServiceItem } from "@/components/service-item";
 
-// Assets
-import { BlueberryFacialIcon, PawdicurePlusIcon, TeethBrushingIcon, EarCleaningIcon, FurConditioningIcon, DeSheddingIcon } from "@/assets/icons/";
-import { Button } from "@/shadcn/button";
-
-import { motion } from 'motion/react'
-import { SectionBadge, SectionDescription, SectionHeader, SectionTitle } from "@/components/section-header";
-import { Badge } from "@/shadcn/badge";
 
 export const Services = () => {
   return (
     <section className="relative bg-secondary py-20 bg-[url('src/assets/images/backgrounds/white-texture.jpg')] bg-cover bg-center">
       <div className="border-y border-foreground/5 absolute inset-0 bg-white/90 z-0" />
 
-      <div className="relative z-10 max-w-9/12 m-auto">
+      <div className="relative z-10 max-w-11/12 m-auto">
 
-        <SectionHeader className="xl:basis-md space-y-5 place-items-center text-center mb-20">
+        <div className="xl:basis-md space-y-5 mb-20">
           <Badge>Workflow</Badge>
           <motion.div
             initial={{ opacity: 0, translateY: '-30px' }}
@@ -28,15 +31,12 @@ export const Services = () => {
             }}
             viewport={{ once: true }}
           >
-            <SectionTitle>
-              <span className="text-accent">Customize </span>
-              your {`\n`} pet's perfect day
-            </SectionTitle>
+            <h2 className="text-4xl font-semibold">Faster and easier design with AI</h2>
           </motion.div>
 
-          <SectionDescription>Need something specific? Pick and choose from our à la carte{"\n"}
-            services to create a grooming experience tailored just for your pet.</SectionDescription>
-        </SectionHeader>
+          <p className="text-secondary-foreground">Need something specific? Pick and choose from our à la carte{"\n"}
+            services to create a grooming experience tailored just for your pet.</p>
+        </div>
 
         <ul className="grid xl:grid-cols-3 gap-10">
           <li>
@@ -89,7 +89,7 @@ export const Services = () => {
           </li>
         </ul>
 
-        <Button size="lg" className="mt-10 text-lg block mx-auto">Book appointment</Button>
+        <Button className="block mx-auto mt-10 text-base" size="lg">Book appointment</Button>
       </div>
     </section>
   );
