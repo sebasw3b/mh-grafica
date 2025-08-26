@@ -1,7 +1,6 @@
 import { PackageCard } from "@/components/package-card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/shadcn/tabs";
 
-import { SectionBadge, SectionDescription, SectionHeader, SectionTitle } from "@/components/section-header";
 
 import { packages } from "@/data/packages.json";
 
@@ -11,6 +10,7 @@ import royal_retreat from "@/assets/images/packages/blQ27FWsd4KU1zsFee7hMfbNNs.a
 
 
 import { motion } from 'motion/react'
+import { Badge } from "@/shadcn/badge";
 
 interface Props {
   title: string;
@@ -18,12 +18,12 @@ interface Props {
   highlight?: string;
 }
 
-export const Packages = ({ title, desc, highlight }: Props) => {
+export const Packages = ({ title, desc }: Props) => {
   return (
     <section className="bg-background py-20">
 
-      <SectionHeader className="xl:basis-md space-y-5 place-items-center max-w-9/12 m-auto text-center mb-20">
-        <SectionBadge className="fill-accent" variant="secondary">
+      <div className="xl:basis-md space-y-5 place-items-center max-w-9/12 m-auto text-center mb-20">
+        <Badge className="fill-accent" variant="secondary">
           <svg
             className="fill-accent"
             xmlns="http://www.w3.org/2000/svg"
@@ -40,7 +40,7 @@ export const Packages = ({ title, desc, highlight }: Props) => {
             </g>
           </svg>
           Packages
-        </SectionBadge>
+        </Badge>
         <motion.div
           initial={{ opacity: 0, translateY: '-30px' }}
           whileInView={{ opacity: 1, translateY: '0px' }}
@@ -51,13 +51,13 @@ export const Packages = ({ title, desc, highlight }: Props) => {
           }}
           viewport={{ once: true }}
         >
-          <SectionTitle>
-            {title}<span className="text-accent"> {highlight}</span>
-          </SectionTitle>
+          <h2>
+            {title}
+          </h2>
         </motion.div>
 
-        <SectionDescription>{desc}</SectionDescription>
-      </SectionHeader>
+        <p>{desc}</p>
+      </div>
 
       <Tabs className="mt-8 max-w-10/12 m-auto" defaultValue="essential-elegance">
         <TabsList>
