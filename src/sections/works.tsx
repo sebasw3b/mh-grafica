@@ -1,27 +1,23 @@
 import transformOne from "@/assets/examples/Rectangle 8.png";
 
-
-// Components
-import { SectionDescription, SectionHeader, SectionTitle } from "@/components/section-header";
-
 // Motion
 import { motion } from 'motion/react'
 
-export const Works = () => {
-  const ourWorks = [
-    transformOne,
-    transformOne,
-    transformOne,
-    transformOne,
-    transformOne,
-    transformOne,
-  ];
+const ourWorks = [
+  transformOne,
+  transformOne,
+  transformOne,
+  transformOne,
+  transformOne,
+  transformOne,
+];
 
+export const Works = () => {
   return (
     <section className="relative bg-gray-50 py-20">
       <div className="relative z-10">
 
-        <SectionHeader className="xl:basis-md space-y-5 place-items-center text-center w-10/12 m-auto mb-10">
+        <div className="xl:basis-md space-y-2 place-items-center text-center w-10/12 m-auto mb-10">
           <motion.div
             initial={{ opacity: 0, translateY: '-30px' }}
             whileInView={{ opacity: 1, translateY: '0px' }}
@@ -32,13 +28,13 @@ export const Works = () => {
             }}
             viewport={{ once: true }}
           >
-            <SectionTitle className="font-bold">
+            <h2 className="text-4xl font-bold">
               Nuestros trabajos
-            </SectionTitle>
+            </h2>
           </motion.div>
 
-          <SectionDescription>Frase de refuerzo para la seccion de nuestros trabajos.La voy a pensar yo, no se preocupen.</SectionDescription>
-        </SectionHeader>
+          <p className="text-secondary-foreground">Frase de refuerzo para la seccion de nuestros trabajos.La voy a pensar yo, no se preocupen.</p>
+        </div>
 
         <div className="w-full overflow-hidden">
           <div className="flex">

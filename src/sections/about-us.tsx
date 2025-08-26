@@ -1,5 +1,5 @@
 import { HomeIcon } from "@/assets/icons/HomeIcon";
-import { SectionBadge, SectionDescription, SectionHeader, SectionTitle } from "@/components/section-header";
+import { Badge } from "@/shadcn/badge";
 
 import { motion } from 'motion/react'
 
@@ -14,11 +14,11 @@ export const AboutUs = ({ title, highlight, desc }: Props) => {
     <section className="bg-secondary border-y border-foreground/10">
       <div className="flex flex-col xl:flex-row gap-20 xl:gap-60 xl:items-center max-w-9/12 xl:max-w-10/12 m-auto py-10 xl:py-20">
 
-        <SectionHeader className="xl:basis-md space-y-5">
-          <SectionBadge className="fill-accent" variant="secondary">
+        <div className="xl:basis-md space-y-5">
+          <Badge className="fill-accent" variant="secondary">
             <HomeIcon />
             About us
-          </SectionBadge>
+          </Badge>
           <motion.div
             initial={{ opacity: 0, translateY: '-30px' }}
             whileInView={{ opacity: 1, translateY: '0px' }}
@@ -29,13 +29,13 @@ export const AboutUs = ({ title, highlight, desc }: Props) => {
             }}
             viewport={{ once: true }}
           >
-            <SectionTitle className="">
+            <h2 className="">
               <span className="text-accent">{highlight}</span>{title}
-            </SectionTitle>
+            </h2>
           </motion.div>
 
-          <SectionDescription>{desc}</SectionDescription>
-        </SectionHeader>
+          <p>{desc}</p>
+        </div>
 
 
         <Experience />

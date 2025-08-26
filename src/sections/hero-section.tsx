@@ -1,7 +1,7 @@
 import video from "@/assets/examples/output.webm";
 
-import { SectionDescription, SectionHeader, SectionTitle } from "@/components/section-header";
 import { Button } from "@/shadcn/button";
+import { ArrowRight } from "lucide-react";
 
 import { motion } from 'motion/react'
 
@@ -24,17 +24,13 @@ interface HeroSectionProps {
 }
 
 export const HeroSection = ({
-
   title,
-  highlight,
   description,
-  button
 }: HeroSectionProps) => {
 
   return (
-    <section className="flex flex-col items-start xl:flex-row max-w-11/12 xl:max-w-10/12 mx-auto pt-26 pb-10 xl:py-20 gap-12 xl:gap-16">
-      <SectionHeader
-        as="header"
+    <section className="flex flex-col items-start xl:flex-row max-w-11/12 xl:max-w-10/12 mx-auto pt-26 pb-10 xl:py-20 gap-12 xl:gap-16 ">
+      <div
         className="space-y-6 basis-[65%] order-1 xl:order-1"
       >
         <motion.div
@@ -47,36 +43,22 @@ export const HeroSection = ({
           }}
           viewport={{ once: true }}
         >
-          <SectionTitle
-            as="h1"
-            className="font-bold leading-none tracking-normal"
+          <h2
+            className="text-5xl xl:text-7xl font-bold leading-none tracking-normal"
           >
             {title}
-            {highlight && (
-              <span className="text-accent">{highlight}</span>
-            )}
-          </SectionTitle>
+          </h2>
         </motion.div>
 
 
-        <SectionDescription className="text-xl">
+        <p className="text-xl xl:text-2xl text-secondary-foreground">
           {description}
-        </SectionDescription>
+        </p>
 
-        <Button
-          asChild={!!button.href}
-          aria-label={button.ariaLabel || `${button.text.toLowerCase().replace(/\s+/g, '-')}`}
-          size="lg"
-          className="xl:inline-block text-base w-fit rounded-full font-semibold"
-        >
-          {button.href ? (
-            <a href={button.href}>{button.text}</a>
-          ) : (
-            <span onClick={button.onClick}>{button.text}</span>
-          )}
+        <Button className="text-base w-fit group" size="lg">Solicitar presupuesto
+          <ArrowRight className="group-hover:translate-x-1 transition-transform duration-500" />
         </Button>
-        <span>✌️ Garantía de colores reales</span>
-      </SectionHeader>
+      </div>
 
       <video
         controls

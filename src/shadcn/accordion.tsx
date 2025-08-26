@@ -16,7 +16,7 @@ function AccordionItem({
   return (
     <AccordionPrimitive.Item
       data-slot="accordion-item"
-      className={cn("border-b last:border-b-0 border border-[#595e6626] bg-gradient-to-t from-foreground/5 to-background rounded-xl overflow-hidden lg:min-w-128", className)}
+      className={cn("border-b border-foreground/10 last:border-b-0 overflow-hidden lg:min-w-128", className)}
       {...props}
     />
   )
@@ -32,13 +32,13 @@ function AccordionTrigger({
       <AccordionPrimitive.Trigger
         data-slot="accordion-trigger"
         className={cn(
-          "focus-visible:border-ring focus-visible:ring-ring/50 flex flex-1 items-start gap-4 p-4 text-left font-medium transition-all outline-none focus-visible:ring-[3px] cursor-pointer disabled:opacity-50 [&[data-state=open]>svg]:rotate-45",
+          "focus-visible:border-ring focus-visible:ring-ring/50 flex flex-1 justify-between items-start gap-4 py-6 text-left transition-all outline-none focus-visible:ring-[3px] cursor-pointer disabled:opacity-50 [&[data-state=open]>svg]:rotate-45 font-semibold",
           className
         )}
         {...props}
       >
-        <PlusIcon className="fill-accent pointer-events-none size-4.5 shrink-0 translate-y-0.5 transition-transform duration-200"/>
         {children}
+        <PlusIcon className="fill-black pointer-events-none size-4.5 shrink-0 translate-y-0.5 transition-transform duration-200" />
       </AccordionPrimitive.Trigger>
     </AccordionPrimitive.Header>
   )
@@ -52,10 +52,10 @@ function AccordionContent({
   return (
     <AccordionPrimitive.Content
       data-slot="accordion-content"
-      className="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down overflow-hidden text-secondary-foreground leading-6"
+      className="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down overflow-hidden text-secondary-foreground leading-6 text-sm"
       {...props}
     >
-      <div className={cn("px-4 pb-4 pt-0", className)}>{children}</div>
+      <div className={cn("pb-4 pt-0", className)}>{children}</div>
     </AccordionPrimitive.Content>
   )
 }

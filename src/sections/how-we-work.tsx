@@ -1,5 +1,5 @@
 import video from "@/assets/videos/OVloYNWNOr1UtcCLV2z2p1DOYw.mp4";
-import { SectionBadge, SectionDescription, SectionHeader, SectionTitle } from "@/components/section-header";
+import { Badge } from "@/shadcn/badge";
 
 import { motion } from 'motion/react'
 
@@ -9,15 +9,15 @@ interface Props {
   highlight?: string;
 }
 
-export const HowWeWork = ({ title, highlight, desc }: Props) => {
+export const HowWeWork = ({ title, desc }: Props) => {
   return (
     <section className="relative bg-secondary py-20 bg-[url('src/assets/images/backgrounds/white-texture.jpg')] bg-cover bg-center">
       <div className="border-y border-foreground/5 absolute inset-0 bg-white/90 z-0" />
 
       <div className="relative z-10 gap-3">
 
-        <SectionHeader className="place-items-center w-8/12 m-auto">
-          <SectionBadge className="fill-accent" variant="secondary">
+        <div className="place-items-center w-8/12 m-auto">
+          <Badge className="fill-accent" variant="secondary">
             <svg
               className="fill-accent"
               xmlns="http://www.w3.org/2000/svg"
@@ -34,7 +34,7 @@ export const HowWeWork = ({ title, highlight, desc }: Props) => {
               </g>
             </svg>
             How we work
-          </SectionBadge>
+          </Badge>
           <motion.div
             initial={{ opacity: 0, translateY: '-30px' }}
             whileInView={{ opacity: 1, translateY: '0px' }}
@@ -45,13 +45,13 @@ export const HowWeWork = ({ title, highlight, desc }: Props) => {
             }}
             viewport={{ once: true }}
           >
-            <SectionTitle className="text-4xl xl:text-6xl text-center tracking-tighter mb-2 leading-tight">
-              {title}<span className="text-accent"> {highlight}</span>
-            </SectionTitle>
+            <h2 className="text-4xl xl:text-6xl text-center tracking-tighter mb-2 leading-tight">
+              {title}
+            </h2>
           </motion.div>
 
-          <SectionDescription className="text-center whitespace-pre-line">{desc}</SectionDescription>
-        </SectionHeader>
+          <p className="text-center whitespace-pre-line">{desc}</p>
+        </div>
 
 
         {/* VIDEO */}
