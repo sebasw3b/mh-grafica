@@ -122,7 +122,7 @@ const MobileMenu = ({
           exit={{ opacity: 0, y: -20 }}
           transition={{ duration: 0.3 }}
         >
-          <div className="flex flex-col items-center gap-6 text-xl mt-12">
+          <div className="flex flex-col items-center gap-2 text-xl mt-12">
             {items.map((item, index) => (
               <motion.div
                 key={item.label}
@@ -134,7 +134,7 @@ const MobileMenu = ({
                 <a
                   href={item.href}
                   onClick={onClose}
-                  className="block w-full text-center px-4 py-3 text-secondary-foreground tracking-tighter font-medium hover:text-accent transition-colors duration-200"
+                  className="block w-full text-center px-4 py-3 tracking-normal font-bold hover:text-accent transition-colors duration-200 text-xl font-secondary"
                 >
                   {item.label}
                 </a>
@@ -146,7 +146,7 @@ const MobileMenu = ({
               transition={{ delay: 0.1 + items.length * 0.1 }}
               className="w-full max-w-xs mt-4"
             >
-              <Button className="w-full text-base rounded-full font-normal" size="lg" onClick={onClose}>
+              <Button className="w-full text-base rounded-full font-semibold" size="lg" onClick={onClose}>
                 Solicita presupuesto
               </Button>
             </motion.div>
