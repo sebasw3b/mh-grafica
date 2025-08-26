@@ -1,7 +1,6 @@
 // Components
 import { Button } from "@/shadcn/button";
 import { Card, CardDescription, CardFooter, CardHeader, CardTitle } from "@/shadcn/card";
-import { SectionBadge, SectionDescription, SectionHeader, SectionTitle } from "@/components/section-header";
 
 // Motion
 import { motion } from 'motion/react'
@@ -12,6 +11,7 @@ import { DoorIcon } from "@/assets/icons/DoorIcon";
 import { HandShakeIcon } from "@/assets/icons/HandShakeIcon";
 import { BookIcon } from "@/assets/icons/BookIcon";
 import { ArrowActionIcon } from "@/assets/icons/ArrowActionIcon";
+import { Badge } from "@/shadcn/badge";
 
 
 export const ContactUs = () => {
@@ -24,11 +24,11 @@ export const ContactUs = () => {
 
         <div className="space-y-10 basis-1/2">
 
-          <SectionHeader className="gap-3">
-            <SectionBadge className="fill-accent" variant="secondary">
+          <div className="gap-3">
+            <Badge className="fill-accent" variant="secondary">
               <HandShakeIcon />
               Contact us
-            </SectionBadge>
+            </Badge>
             <motion.div
               initial={{ opacity: 0, translateY: '-30px' }}
               whileInView={{ opacity: 1, translateY: '0px' }}
@@ -40,12 +40,12 @@ export const ContactUs = () => {
               viewport={{ once: true }}
             >
 
-              <SectionTitle>
+              <h2>
                 How to <span className="text-accent">get <br></br>in touch</span> with us
-              </SectionTitle>
+              </h2>
             </motion.div>
-            <SectionDescription>Have a question? We're always here to help.</SectionDescription>
-          </SectionHeader>
+            <p>Have a question? We're always here to help.</p>
+          </div>
 
           <div className="rounded-2xl overflow-hidden h-120">
             <iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d188.9128874441777!2d-73.98479!3d40.74869!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDDCsDQ0JzU1LjMiTiA3M8KwNTknMDUuMiJX!5e0!3m2!1sen!2sus!4v1748531982164!5m2!1sen!2sus" width="100%" height="100%" loading="lazy"
