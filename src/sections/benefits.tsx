@@ -1,7 +1,6 @@
-import { motion } from 'motion/react'
+import image from '@/assets/examples/PHOTO-2025-08-01-15-25-59.jpg'
 
-// Icons
-import { BlueberryFacialIcon } from "@/assets/icons/";
+import { motion } from 'motion/react'
 
 // Theme Components
 import { BenefitItem } from "@/components/benefit-item";
@@ -11,10 +10,9 @@ import { Lock, Phone, Activity } from 'lucide-react'
 
 export const Benefits = () => {
   return (
-    <section className="relative bg-secondary py-20 bg-[url('src/assets/images/backgrounds/white-texture.jpg')] bg-cover bg-center">
-      <div className="border-y border-foreground/5 absolute inset-0 bg-white/90 z-0" />
+    <section className="relative max-w-11/12 m-auto bg-secondary py-20 flex flex-col xl:flex-row gap-10">
 
-      <div className="relative z-10 max-w-11/12 m-auto">
+      <div className='xl:basis-1/2'>
 
         <div className="xl:basis-md space-y-8">
           <motion.div
@@ -60,6 +58,16 @@ export const Benefits = () => {
         </div>
 
 
+      </div>
+
+      <div className='xl:basis-1/2'>
+        <img
+          src={image}
+          alt="Descripción principal del producto"
+          width="1200"
+          height="600"
+          className="object-cover rounded-3xl aspect-square"
+        />
       </div>
     </section>
   );
