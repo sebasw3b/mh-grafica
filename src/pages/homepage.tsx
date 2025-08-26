@@ -35,8 +35,11 @@ function Homepage() {
 
     <Benefits
       sectionTitle="Beneficios del producto"
-      sectionImage=""
-      benefits={[]}
+      itemsDirection="reverse"
+    />
+
+    <Benefits
+      sectionTitle="Caracteristicas del producto"
     />
 
     <FAQ />
