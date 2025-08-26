@@ -37,7 +37,7 @@ function SectionTitle({
   return (
     <Comp
       className={cn(
-        "text-5xl xl:text-6xl tracking-tighter xl:leading-tight whitespace-pre-line",
+        "text-5xl xl:text-6xl font-heading tracking-tighter xl:leading-tight whitespace-pre-line",
         className
       )}
       {...props}
