@@ -38,7 +38,7 @@ const DEFAULT_BENEFITS: BenefitData[] = [
   }
 ];
 
-const ANIMATION_CONFIG = {
+const TITLE_ANIMATION = {
   initial: { opacity: 0, translateY: '-30px' },
   whileInView: { opacity: 1, translateY: '0px' },
   transition: {
@@ -48,6 +48,8 @@ const ANIMATION_CONFIG = {
   },
   viewport: { once: true }
 };
+
+
 
 export const Benefits = ({
   sectionTitle = 'Título de sección',
@@ -71,22 +73,31 @@ export const Benefits = ({
       <div className={containerClasses}>
         <div className="xl:basis-1/2">
           <div className="xl:basis-md space-y-8">
-            <motion.div {...ANIMATION_CONFIG}>
+            <motion.div {...TITLE_ANIMATION}>
               <h2 className="text-4xl xl:text-6xl font-semibold tracking-tighter">
                 {sectionTitle}
               </h2>
             </motion.div>
 
             <ul className="flex flex-col gap-10">
-              {benefits.map((benefit, index) => (
-                <li key={`${benefit.title}-${index}`}>
+              {benefits.map((benefit, index) => {
+                return <motion.li
+                  initial={{ opacity: 0, translateY: '-30px' }}
+                  whileInView={{ opacity: 1, translateY: '0px' }}
+                  transition={{
+                    duration: 0.5,
+                    ease: 'easeInOut' as const,
+                    delay: index * 0.15
+                  }}
+                  viewport={{ once: true }}
+                  key={`${benefit.title}-${index}`}>
                   <BenefitItem
                     Icon={benefit.Icon}
                     title={benefit.title}
                     description={benefit.description}
                   />
-                </li>
-              ))}
+                </motion.li>
+              })}
             </ul>
           </div>
         </div>
