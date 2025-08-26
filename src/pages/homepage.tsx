@@ -10,7 +10,7 @@ import heroImage from "@/assets/images/hero/geri-sakti-R_J3nOqe9Kw-unsplash.jpg"
 import { HeroSection } from "@/sections/hero-section";
 import { FAQ } from "@/sections/FAQ";
 import { Works } from "@/sections/works";
-import { Services } from "@/sections/services";
+import { Benefits } from "@/sections/benefits";
 
 
 function Homepage() {
@@ -33,7 +33,7 @@ function Homepage() {
 
     <Works />
 
-    <Services />
+    <Benefits />
 
     <FAQ />
 
