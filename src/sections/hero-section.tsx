@@ -25,11 +25,9 @@ interface HeroSectionProps {
 }
 
 export const HeroSection = ({
-
   title,
   highlight,
   description,
-  button
 }: HeroSectionProps) => {
 
   return (

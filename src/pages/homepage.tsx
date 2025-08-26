@@ -33,7 +33,11 @@ function Homepage() {
 
     <Works />
 
-    <Benefits />
+    <Benefits
+      sectionTitle="Beneficios del producto"
+      sectionImage=""
+      benefits={[]}
+    />
 
     <FAQ />
 
