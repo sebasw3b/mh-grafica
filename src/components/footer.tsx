@@ -5,7 +5,7 @@ export function Footer() {
         <footer className="bg-background border-t border-border py-12 px-4 font-primary">
             <div className="max-w-6xl mx-auto">
                 {/* Logo */}
-                <div className="mb-4">
+                <div className="mb-6">
                     <Logo />
                 </div>
 
@@ -13,7 +13,7 @@ export function Footer() {
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
                     {/* Browse Section */}
                     <div>
-                        <h3 className="font-semibold text-foreground mb-4 text-sm">Browse</h3>
+                        <h3 className="font-semibold text-foreground mb-4 text-sm">Los banners</h3>
                         <nav className="space-y-2">
                             <a href="/" className="block text-secondary-foreground text-sm hover:text-foreground transition-colors">
                                 Home
@@ -29,7 +29,7 @@ export function Footer() {
 
                     {/* Resources Section */}
                     <div>
-                        <h3 className="font-semibold text-foreground mb-4 text-sm">Resources</h3>
+                        <h3 className="font-semibold text-foreground mb-4 text-sm">Sobre nosotros</h3>
                         <nav className="space-y-2">
                             <a href="/blog" className="block text-secondary-foreground text-sm hover:text-foreground transition-colors">
                                 Blog home
@@ -45,7 +45,7 @@ export function Footer() {
 
                     {/* Information Section */}
                     <div>
-                        <h3 className="font-semibold text-foreground mb-4 text-sm">Information</h3>
+                        <h3 className="font-semibold text-foreground mb-4 text-sm">Contacto</h3>
                         <nav className="space-y-2">
                             <a href="/about" className="block text-secondary-foreground text-sm hover:text-foreground transition-colors">
                                 About us
@@ -61,25 +61,25 @@ export function Footer() {
 
                     {/* Follow Us Section */}
                     <div>
-                        <h3 className="font-semibold text-foreground mb-4 text-sm">Follow Us</h3>
+                        <h3 className="font-semibold text-foreground mb-4 text-sm">Seguinos en redes</h3>
                         <nav className="space-y-2">
                             <a
-                                href="https://dribbble.com"
+                                href="#"
                                 className="block text-secondary-foreground text-sm hover:text-foreground transition-colors"
                             >
-                                Dribbble
+                                Facebook
                             </a>
                             <a
-                                href="https://behance.net"
-                                className="block text-secondary-foreground text-sm hover:text-foreground transition-colors"
-                            >
-                                Behance
-                            </a>
-                            <a
-                                href="https://instagram.com"
+                                href="#"
                                 className="block text-secondary-foreground text-sm hover:text-foreground transition-colors"
                             >
                                 Instagram
+                            </a>
+                            <a
+                                href="#"
+                                className="block text-secondary-foreground text-sm hover:text-foreground transition-colors"
+                            >
+                                LinkedIn
                             </a>
                         </nav>
                     </div>
