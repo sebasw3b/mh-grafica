@@ -16,13 +16,13 @@ export function Footer() {
                         <h3 className="font-semibold text-foreground mb-4 text-sm">Los banners</h3>
                         <nav className="space-y-2">
                             <a href="/" className="block text-secondary-foreground text-sm hover:text-foreground transition-colors">
-                                Home
+                                Caracteristicas
                             </a>
                             <a href="/features" className="block text-secondary-foreground text-sm hover:text-foreground transition-colors">
-                                Features
+                                Como se arman
                             </a>
                             <a href="/pricing" className="block text-secondary-foreground text-sm hover:text-foreground transition-colors">
-                                Pricing
+                                Porque estos banners y no otros
                             </a>
                         </nav>
                     </div>
@@ -32,13 +32,13 @@ export function Footer() {
                         <h3 className="font-semibold text-foreground mb-4 text-sm">Sobre nosotros</h3>
                         <nav className="space-y-2">
                             <a href="/blog" className="block text-secondary-foreground text-sm hover:text-foreground transition-colors">
-                                Blog home
+                                Quienes somos
                             </a>
                             <a href="/blog/single" className="block text-secondary-foreground text-sm hover:text-foreground transition-colors">
-                                Blog single
+                                Experiencia
                             </a>
                             <a href="/apps" className="block text-secondary-foreground text-sm hover:text-foreground transition-colors">
-                                Apps
+                                Forma de trabajo
                             </a>
                         </nav>
                     </div>
@@ -48,13 +48,10 @@ export function Footer() {
                         <h3 className="font-semibold text-foreground mb-4 text-sm">Contacto</h3>
                         <nav className="space-y-2">
                             <a href="/about" className="block text-secondary-foreground text-sm hover:text-foreground transition-colors">
-                                About us
+                                Telefono
                             </a>
                             <a href="/contact" className="block text-secondary-foreground text-sm hover:text-foreground transition-colors">
-                                Contact us
-                            </a>
-                            <a href="/404" className="block text-secondary-foreground text-sm hover:text-foreground transition-colors">
-                                404 page
+                                Email
                             </a>
                         </nav>
                     </div>
@@ -75,12 +72,7 @@ export function Footer() {
                             >
                                 Instagram
                             </a>
-                            <a
-                                href="#"
-                                className="block text-secondary-foreground text-sm hover:text-foreground transition-colors"
-                            >
-                                LinkedIn
-                            </a>
+
                         </nav>
                     </div>
                 </div>
