@@ -11,6 +11,8 @@ import { HeroSection } from "@/sections/hero-section";
 import { FAQ } from "@/sections/FAQ";
 import { Works } from "@/sections/works";
 import { Benefits } from "@/sections/benefits";
+import { FeaturedTestimonial } from "@/sections/featured-testimonial";
+import { CallToAction } from "@/sections/call-to-action";
 
 
 function Homepage() {
@@ -34,6 +36,7 @@ function Homepage() {
     <Works />
 
     <Benefits
+      className="bg-white"
       sectionTitle="Beneficios del producto"
       itemsDirection="reverse"
     />
@@ -42,15 +45,24 @@ function Homepage() {
       sectionTitle="Caracteristicas del producto"
     />
 
+    <FeaturedTestimonial />
+
     <FAQ />
 
+    <CallToAction
+      title="Un titulo de ejemplo y banners en 3d."
+      description="Descripcion de refuerzo para el call to action, con banners en 3d para reforzar el trabajo bien hecho."
+      button="Texto call to action"
+      image="src/assets/examples/banner-kavak.webp"
+    />
+
     {/* Blur effect */}
-    <div className="fixed inset-x-0 bottom-0 h-40 backdrop-blur-3xl z-30"
+    {/* <div className="fixed inset-x-0 bottom-0 h-40 backdrop-blur-3xl z-30"
       style={{
         maskImage: 'linear-gradient(to top, black, transparent)',
         WebkitMaskImage: 'linear-gradient(to top, black, transparent)'
       }}>
-    </div>
+    </div> */}
   </main>
 }
 

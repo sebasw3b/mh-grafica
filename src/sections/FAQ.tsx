@@ -8,7 +8,7 @@ import { motion } from 'motion/react'
 
 export const FAQ = () => {
   return (
-    <section className="bg-background">
+    <section className="bg-secondary">
       <div className="flex flex-col-reverse xl:flex-row gap-10 xl:gap-20 max-w-11/12 xl:max-w-6xl m-auto py-10 xl:py-20">
         <div className="relative">
           <img
