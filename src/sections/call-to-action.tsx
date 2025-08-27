@@ -35,7 +35,7 @@ export const CallToAction = ({ title, description, button, image, className, ...
                 alt="Descripción principal del producto"
                 width="1200"
                 height="600"
-                className="object-contain xl:w-8/12 m-auto aspect-square scale-170 translate-y-40"
+                className="object-contain xl:w-8/12 m-auto aspect-square scale-200 translate-y-40"
             />
         </div>
 
