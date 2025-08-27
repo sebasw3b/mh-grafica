@@ -15,7 +15,7 @@ export const CallToAction = ({ title, description, button, image, className, ...
         {...props}
         className={cn('bg-gradient-to-b from-[#5495f5] to-[#bbf6ff] py-20 place-content-center overflow-hidden', className)}
     >
-        <div className="text-center text-white xl:max-w-8/12 m-auto xl:max-h-dvh">
+        <div className="text-center text-white max-w-11/12 xl:max-w-8/12 m-auto xl:max-h-dvh">
             <h2 className="text-3xl xl:text-6xl font-semibold mb-2">{title}</h2>
             <p className="mb-5">{description}</p>
             <Button variant="secondary" className="text-base w-fit group py-5">{button}

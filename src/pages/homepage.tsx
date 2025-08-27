@@ -50,10 +50,10 @@ function Homepage() {
     <FAQ />
 
     <CallToAction
-      title="Un titulo de ejemplo y banners en 3d."
+      title="Un titulo CTA de ejemplo"
       description="Descripcion de refuerzo para el call to action, con banners en 3d para reforzar el trabajo bien hecho."
       button="Texto call to action"
-      image="src/assets/examples/banner-kavak.webp"
+      image="../public/images/renders/banner-kavak.webp"
     />
 
     {/* Blur effect */}
