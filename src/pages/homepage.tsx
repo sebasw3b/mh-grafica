@@ -53,7 +53,7 @@ function Homepage() {
       title="Un titulo CTA de ejemplo"
       description="Descripcion de refuerzo para el call to action, con banners en 3d para reforzar el trabajo bien hecho."
       button="Texto call to action"
-      image="../public/images/renders/banner-kavak.webp"
+      image="/images/renders/banner-kavak.webp"
     />
 
     {/* Blur effect */}
