@@ -5,7 +5,7 @@ import { motion } from 'motion/react'
 
 export const FeaturedTestimonial = () => {
   return (
-    <section className="bg-background">
+    <section className="bg-white">
       <div className="flex flex-col-reverse xl:flex-row items-center gap-10 xl:gap-20 max-w-10/12 xl:max-w-3xl m-auto py-10 xl:py-20">
         <div>
 

@@ -35,6 +35,7 @@ function Homepage() {
     <Works />
 
     <Benefits
+      className="bg-white"
       sectionTitle="Beneficios del producto"
       itemsDirection="reverse"
     />
