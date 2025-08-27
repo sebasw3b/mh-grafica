@@ -13,6 +13,7 @@ import { Works } from "@/sections/works";
 import { Benefits } from "@/sections/benefits";
 import { FeaturedTestimonial } from "@/sections/featured-testimonial";
 import { CallToAction } from "@/sections/call-to-action";
+import { Footer } from "@/components/footer";
 
 
 function Homepage() {
@@ -63,6 +64,8 @@ function Homepage() {
         WebkitMaskImage: 'linear-gradient(to top, black, transparent)'
       }}>
     </div> */}
+
+    <Footer />
   </main>
 }
 
