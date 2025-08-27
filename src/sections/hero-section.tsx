@@ -76,9 +76,6 @@ export const HeroSection = ({
         </video>
       </div>
 
-
-
-      <div className="absolute bottom-0 w-full block h-46 bg-linear-to-b from-transparent to-white z-10"></div>
     </section>
   );
 };

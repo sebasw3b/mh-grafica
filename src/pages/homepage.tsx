@@ -14,7 +14,7 @@ import { Benefits } from "@/sections/benefits";
 
 
 function Homepage() {
-  return <main className="font-primary bg-gradient-to-l from-[#c4a3c4] via-[#edd3ed] to-white">
+  return <main className="font-primary">
     <Header />
 
     <WhatsAppPopOver />
