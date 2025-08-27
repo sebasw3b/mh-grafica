@@ -11,6 +11,7 @@ import { HeroSection } from "@/sections/hero-section";
 import { FAQ } from "@/sections/FAQ";
 import { Works } from "@/sections/works";
 import { Benefits } from "@/sections/benefits";
+import { FeaturedTestimonial } from "@/sections/featured-testimonial";
 
 
 function Homepage() {
@@ -41,6 +42,8 @@ function Homepage() {
     <Benefits
       sectionTitle="Caracteristicas del producto"
     />
+
+    <FeaturedTestimonial />
 
     <FAQ />
 
