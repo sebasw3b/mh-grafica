@@ -20,7 +20,7 @@ const Header = () => {
 
   return (
     <motion.div
-      className="fixed xl:sticky inset-0 z-50 bg-white"
+      className="fixed xl:sticky inset-0 z-50"
       animate={{
         height: isMenuOpen ? "100vh" : "4.2rem"
       }}
