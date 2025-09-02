@@ -1,5 +1,3 @@
-import video from "@/assets/examples/output.webm";
-
 import { Button } from "@/shadcn/button";
 import { ArrowRight } from "lucide-react";
 
@@ -26,6 +24,7 @@ interface HeroSectionProps {
 export const HeroSection = ({
   title,
   description,
+  image
 }: HeroSectionProps) => {
 
   return (
@@ -33,7 +32,7 @@ export const HeroSection = ({
 
       <div className="flex flex-col items-start xl:flex-row max-w-11/12 xl:max-w-10/12 m-auto gap-12 xl:gap-16">
         <div
-          className="space-y-6 basis-[65%] order-1 xl:order-1"
+          className="space-y-6 basis-1/2 order-1 xl:order-1"
         >
           <motion.div
             initial={{ opacity: 0, translateY: '-30px' }}
@@ -61,8 +60,18 @@ export const HeroSection = ({
             <ArrowRight className="group-hover:translate-x-1 transition-transform duration-500" />
           </Button>
         </div>
+        <div className="basis-1/2 order-1">
+          <img
+            src={image.src}
+            alt="Descripción principal del producto"
+            width="1200"
+            height="600"
+            className="object-cover rounded-3xl aspect-square"
+          />
+        </div>
 
-        <video
+
+        {/* <video
           controls
           loop
           playsInline
@@ -73,7 +82,7 @@ export const HeroSection = ({
         >
           <source src={video} type="video/webm" />
           Tu navegador no soporta videos HTML5.
-        </video>
+        </video> */}
       </div>
 
     </section>
