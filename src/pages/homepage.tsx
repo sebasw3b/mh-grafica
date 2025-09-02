@@ -4,7 +4,7 @@ import { WhatsAppPopOver } from "@/components/whatsapp-pop-over";
 
 
 // Assets
-import heroImage from "@/assets/images/hero/geri-sakti-R_J3nOqe9Kw-unsplash.jpg";
+import heroImage from "../../public/images/renders/kavak-office-example.png";
 
 // Sections
 import { HeroSection } from "@/sections/hero-section";
