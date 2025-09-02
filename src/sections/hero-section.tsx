@@ -66,7 +66,7 @@ export const HeroSection = ({
             alt="Descripción principal del producto"
             width="1200"
             height="600"
-            className="object-cover rounded-3xl aspect-square"
+            className="object-cover rounded-3xl aspect-square drop-shadow-xl drop-shadow-black/30"
           />
         </div>
 
